@@ -1,0 +1,33 @@
+A Ruby command-line application (CLI) for managing an SQLite database. This application will allow you to add, list, update, and delete records in a contacts table. We will use the sqlite3 gem to interact with the database and thor to build the command-line interface.
+
+1. Initial Setup
+First, create a directory for the project and set up the environment:
+mkdir db_manager
+cd db_manager
+
+How to Run the CLI
+To run the CLI, you can run the Ruby file with the necessary commands. Here are some examples:
+
+Add a Contact:
+ruby db_manager.rb add "João Silva" "joao@example.com" "123-456-7890"
+
+
+List All Contacts:
+ruby db_manager.rb list
+
+
+Update a Contact:
+ruby db_manager.rb update 1 "Maria Souza" "maria@example.com" "098-765-4321"
+
+
+Delete a Contact:
+ruby db_manager.rb delete 1
+
+
+
+Explanations and Customizations
+SQLite Database: The application uses a SQLite database (contacts.db). The contacts table is created automatically if it does not exist.
+
+Thor CLI: Thor makes it easy to create command-line commands with descriptions and arguments. In the code, the add, list, update, and delete methods are defined as CLI commands.
+
+Full CRUD: The example covers the basic CRUD operations (Create, Read, Update, Delete).
